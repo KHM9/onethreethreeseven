@@ -1,0 +1,15 @@
+name: onethreethreeseven
+api:
+ - 3.3 0
+ - 3.0.0
+ - 4.0.0
+main: onethreethreeseven\main
+#The version of your plugin.
+version: 1.0.0
+description: Testing for PMMP Plugin Development.
+Author: KHM9
+
+#the Commands.
+commands:
+  1337:
+    description: secret... or is it?
