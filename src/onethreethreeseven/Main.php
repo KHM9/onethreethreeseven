@@ -1,6 +1,6 @@
 <?php
 
-namespace KHM9/onethreethreeseven;
+namespace onethreethreeseven;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat as C;
