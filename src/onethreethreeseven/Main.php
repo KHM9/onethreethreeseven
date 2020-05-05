@@ -1,6 +1,6 @@
 <?php
 
-Namespace: oneonethreeseven
+namespace oneonethreeseven
 
 # Base
 use pocketmine\plugin\PluginBase;
