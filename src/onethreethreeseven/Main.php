@@ -1,31 +1,34 @@
 <?php
 
-namespace oneonethreeseven
+namespace onethreethreeseven;
 
-# Base
 use pocketmine\plugin\PluginBase;
-
-# Command
-use pocketmine\command\CommandSender;
+use pocketmine\utils\TextFormat as C;
+use pocketmine\Player;
+use pocketmine\Server;
 use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
 
-class Main extends PluginBase implements Listener{
-
-	public function onEnable(){
-		$this->getLogger()->info("Hello World!");
-	}
-
-	public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
-		switch($command->getName()){
-			case "example":
-				$sender->sendMessage("Example command output");
-				return true;
-			default:
-				return false;
-		}
-	}
-
-	public function onDisable(){
-		$this->getLogger()->info("Bye!");
-	}
+class main extends PluginBase {
+    
+    public function onLoad(): void{
+        $this->getLogger()->info(C::GOLD . "Loading is now Loading");
+    }
+    public function onEnable(): void{
+        $this->getLogger()->info(C::GREEN . "Plugin has been Enabled!");
+    }
+    public function onDisable(): void{
+        $this->getLogger()->info(C::RED . "Plugin has been Disabled");
+    }
+    public function onCommand(CommandSender $sender, Command $cmd, String $Label, array $args): bool{
+        if($cmd->getName()){
+            switch($args(count) === 0){
+              case "example":
+                $player->sendMessage(C::GREEN . "This is an Example");
+                $player->addTitle(C::GREEN . "Example" . "Plugin");
+                break;
+            }
+        return true;
+        }
+    }
 }
