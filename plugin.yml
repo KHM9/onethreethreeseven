@@ -1,6 +1,6 @@
 name: onethreethreeseven
 author: KHM9
-main: src\onethreethree\Main
+main: src\onethreethreeseven\Main
 version: "1.0.1"
 description: onethreethreeseven is very useless
 api:
