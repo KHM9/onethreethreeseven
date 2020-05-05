@@ -1,14 +1,14 @@
 <?php
 
-namespace onethreethreeseven;
+Namespace: oneonethreeseven
 
+# Base
 use pocketmine\plugin\PluginBase;
-use pocketmine\utils\TextFormat as C;
-use pocketmine\Player;
-use pocketmine\Server;
-use pocketmine\command\Command;
+
+# Command
 use pocketmine\command\CommandSender;
-    
+use pocketmine\command\Command;
+
 class Main extends PluginBase implements Listener{
 
 	public function onEnable(){
