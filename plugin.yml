@@ -1,14 +1,11 @@
 name: onethreethreeseven
+author: KHM9
+main: src\onethreethree\Main
+version: "1.0.1"
+description: onethreethreeseven is very useless
 api:
- - 3.3 0
- - 3.0.0
- - 4.0.0
-main: onethreethreeseven\main
-#The version of your plugin.
-version: 1.0.0
-description: Testing for PMMP Plugin Development.
-Author: KHM9
+- 3.0.0
 
-commands:
-  1337:
-    description: secret... or is it?
+main: onethreethreeseven
+commands: []
+permissions: []
